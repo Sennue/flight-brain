@@ -1,0 +1,23 @@
+[package]
+name = "flight_brain"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "flight_brain"
+path = "src/lib.rs"
+
+[[bin]]
+name = "flight_brain"
+path = "src/main.rs"
+test = false
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+libc = { version = "0.2", default-features = false, features = [] }
+
