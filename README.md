@@ -1,46 +1,49 @@
+<!-- README.md -->
+
 # Flight Brain - Flight Computer Engine
 
 THIS README IS A WORK IN PROGRESS!
 
 ## Overview
-Flight Brain is a flight computer engine.  Its architecture is centered around a powerful message queue system, enabling efficient communication and processing within various user-defined systems and messages.  This design approach offers exceptional flexibility and scalability.
+Flight Brain is a sophisticated flight computer engine designed to optimize communication and processing within embedded systems. Its core is a powerful, flexible message queue system that handles interactions between various customizable systems and messages. This unique architecture ensures efficient operation, especially in resource-constrained or real-time environments.
 
 ## Key Features
-- **Message Queue Architecture**: Utilizes a message queue system for managing communications between different systems within a tick-based processing framework.
-- **User-Defined Systems and Messages**: Offers the flexibility to define custom systems and messages, catering to specific operational needs and scenarios.
-- **Tick-Based Processing**: Each system processes messages relevant to the current tick and can enqueue messages for subsequent ticks, ensuring organized and timely data handling.
-- **`no_std` Rust Environment**: Built in a `no_std` Rust environment, perfect for embedded systems.
-- **Robust and Adaptable**: Designed to be resilient and adaptable for demanding mission requirements.
+- **Message Queue Architecture**: At the heart of Flight Brain is a dynamic message queue system, which orchestrates communications between different systems in a highly efficient manner.
+- **User-Defined Systems and Messages**: Offers unparalleled flexibility, allowing users to define systems and messages that align with specific operational requirements.
+- **Tick-Based Processing**: Implements a tick-based framework where each system processes messages for the current tick and can enqueue messages for future processing, ensuring a structured and efficient approach.
+- **Designed for `no_std` Rust Environment**: Specifically built for `no_std` Rust environments, making it ideal for embedded systems or applications with strict memory constraints.
+- **Robust and Modular Design**: Crafted to meet demanding requirements, the framework's modular design allows for easy adaptation and scalability.
+- **Illustrative Examples**: Includes a set of examples demonstrating how to use the system effectively, catering to various use cases and providing a solid starting point for new users.
+
 
 ## Getting Started
-To begin using Flight Brain, you should have the Rust toolchain installed on your system. You can download Rust from [the official Rust website](https://www.rust-lang.org/).
+To use Flight Brain, ensure you have the Rust toolchain installed. Rust can be downloaded from [the official Rust website](https://www.rust-lang.org/).
 
 ## Including Flight Brain as a Dependency
 
-To use Flight Brain in your own Rust project, you can include it as a dependency from its GitHub repository. Follow these steps to set it up:
+To integrate Flight Brain into your Rust project, add it as a dependency from its GitHub repository:
 
-1. Open your Rust project's `Cargo.toml` file.
-
-2. Under the `[dependencies]` section, add the following line:
+1. Add this line under the `[dependencies]` section in your `Cargo.toml` file:
    ```toml
    flight_brain = { git = "https://github.com/Sennue/flight_brain.git" }
+   ```
 
-## Usage
-After including the dependency, your systems can be integrated into Flight Brain.  Refer to the documentation for guidance on creating your systems and messages, and how to utilize the message queue for efficient data processing.
+## Usage and Examples
+Incorporate Flight Brain into your project to create and manage systems and messages efficiently. Be sure to check out the examples included in the repository for practical insights and implementation guidance.
 
 ## Contributing
-Contributions to Flight Brain are highly encouraged.  Please read our contributing guidelines for information on submitting pull requests or issues.
+Contributions to the development and enhancement of Flight Brain are welcome. Please refer to our contributing guidelines for instructions on submitting pull requests or issues.
 
 ### Installation for Contributors
 1. Clone the repository:
    ```bash
    git clone https://github.com/Sennue/flight_brain.git
    ```
-2. Navigate to the project directory:
+2. Enter the project directory:
    ```bash
    cd flight_brain
    ```
-3. Build the project:
+3. Build the project using Cargo:
    ```bash
    cargo build
    ```

@@ -1,16 +1,9 @@
+# Cargo.toml
+
 [package]
 name = "flight_brain"
 version = "0.1.0"
 edition = "2021"
-
-[lib]
-name = "flight_brain"
-path = "src/lib.rs"
-
-[[bin]]
-name = "flight_brain"
-path = "src/main.rs"
-test = false
 
 [profile.dev]
 panic = "abort"
@@ -19,5 +12,11 @@ panic = "abort"
 panic = "abort"
 
 [dependencies]
+# none
+
+[dev-dependencies]
 libc = { version = "0.2", default-features = false, features = [] }
+libc_alloc = "1.0"
+libc-print = "0.1.22"
+hashbrown = "0.14.3"
 

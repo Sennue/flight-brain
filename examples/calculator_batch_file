@@ -1,0 +1,9 @@
+batch
+expected_answer = 5200
+fuel_rate = 500
+flight_time = 10
+reserve_fuel = 200
+fuel_rate
+* flight_time
++ reserve_fuel
+exit
